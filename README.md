@@ -9,8 +9,8 @@
 - RS232 interface on a DB9 connector.
 - Parallel interface on a IDC 6x2 connector.
 - 5x6 hexadecimal keypad, pressing two keys will load the 8 bit register with a single byte.
-- Two extra keys for Carrige return and backspace, pressing CR or Backspace will fill the 8bit register with 0x0D or 0x08 respectively.  
-- once the register is full the keypad will set the BYTE_RDY pin to HIGH and wait for the register to be read.
+- Two extra keys for carrige return and backspace, pressing CR or CLR will fill the 8bit register with 0x0D or 0x08 respectively.  
+- Once the register is full the keypad will set the BYTE_RDY pin to HIGH and wait for the register to be read.
 
 ## Reading the keypad:
 - The register can be read via the parallel port by:
