@@ -14,7 +14,7 @@
 - 3.3V or 5v operation.
 
 ## Writing on the keypad:
-- The keypad should load the most significant hexadecimal digit first then the least significant digit (this is backwards on V1.0).  
+- The keypad should load the most significant hexadecimal digit first then the least significant digit.  
 - Once the register is loaded the byte-ready LED will light up. if using in serial mode it should blink and reset automatically.
  
 ## Reading the keypad:
