@@ -19,10 +19,11 @@
 
 - The register can be read on the serial ports via RS232 or UART by:  
   1 - Setting #SERIAL_EN LOW.   
-  2 - Reading the Serial output.  
-  (boundrate can be set using a jumper)
-  (boundrate Clock pin is also available on UART port)
-  (serial uses no parity, 1 stop bit{HIGH}, 1 init bit{LOW})
+  2 - Reading the Serial output.
+    
+  (boundrate can be set using a jumper)  
+  (boundrate Clock pin is also available on UART port)  
+  (serial uses no parity, 1 stop bit{HIGH}, 1 init bit{LOW})  
   
 ### This circuit hasn't been tested yet.
 
