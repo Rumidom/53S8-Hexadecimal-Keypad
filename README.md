@@ -1,5 +1,8 @@
 # 53S8-Hexadecimal-Keypad
-53S8 Hexadecimal Keypad 5x3 Is a serial/parallel Keypad interface for 8-bit computers using only 7400 logic chips
+53S8 Hexadecimal Keypad Is a 5x3 serial/parallel Keypad with Cherry MX style switches, and interfaces for 8-bit computers using only 7400 logic chips.
+<p align="center">
+  <img src="https://github.com/Rumidom/53S8-Hexadecimal-Keypad/blob/main/PCB%20Layout%202026-07-18.png" />
+</p>
 
 ## Features:
 - UART interface on a IDC 3x2 connector.
