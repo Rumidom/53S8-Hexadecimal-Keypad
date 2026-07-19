@@ -23,7 +23,7 @@
     
   (boundrate can be set using a jumper)  
   (boundrate Clock pin is also available on UART port)  
-  (serial uses no parity, 1 stop bit{HIGH}, 1 init bit{LOW})  
+  (serial uses no parity, 1 stop bit ```HIGH```, 1 init bit ```LOW```)  
   
 ### This circuit hasn't been tested yet.
 
