@@ -11,7 +11,12 @@
 - 5x6 hexadecimal keypad, pressing two keys will load the 8 bit register with a single byte.
 - Two extra keys for carrige return and backspace, pressing CR or CLR will fill the 8bit register with ```0x0D``` or ```0x08``` respectively.  
 - Once the register is full the keypad will set the ```BYTE_RDY``` pin to ```HIGH``` and wait for the register to be read.
+- 3.3V or 5v operation.
 
+## Writing on the keypad:
+- The keypad should load the most significant hexadecimal digit first then the least significant digit (this is backwards on V1.0).  
+- Once the register is loaded the byte-ready LED will light up. if using in serial mode it should blink and reset automatically.
+ 
 ## Reading the keypad:
 - The register can be read via the parallel port by:  
   1 - Reading the 8 parallel bits when the pin ```BYTE_RDY``` is ```HIGH```  
@@ -27,8 +32,13 @@
 
 ## Use-cases:
 This keypad can be used to interface with [Ben Eater's](https://eater.net/) 6502 and 8 bit computers,  [Grant Searle's](http://searle.x10host.com/) minimal computers, or to manually program an parallel eeprom. 
-  
+
 ### This circuit hasn't been tested yet.
+
+## TODO:
+- [ ] Add a reset button to reset the keypad in parallel/manual mode
+- [ ] Reduce footprint if possible.
+- [ ] Simulate circuit. 
 
 ## License:
 This project is MIT licensed.
