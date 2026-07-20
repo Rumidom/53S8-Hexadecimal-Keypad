@@ -1,5 +1,5 @@
-# 53S8-Hexadecimal-Keypad
-53S8 Hexadecimal Keypad Is a 5x3 serial/parallel Keypad with Cherry MX style switches, and interfaces for 8-bit computers using only 7400 logic chips.
+# 63S8-Hexadecimal-Keypad
+63S8 Hexadecimal Keypad Is a 6x3 serial/parallel Keypad with Cherry MX style switches, and interfaces for 8-bit computers using only 7400 logic chips.
 <p align="center">
   <img src="https://github.com/Rumidom/53S8-Hexadecimal-Keypad/blob/main/PCB%20Layout%202026-07-18.png" />
 </p>
@@ -8,7 +8,7 @@
 - UART interface on a IDC 3x2 connector.
 - RS232 interface on a DB9 connector.
 - Parallel interface on a IDC 6x2 connector.
-- 5x6 hexadecimal keypad, pressing two keys will load the 8 bit register with a single byte.
+- 6x3 hexadecimal keypad, pressing two keys will load the 8 bit register with a single byte.
 - Two extra keys for carrige return and backspace, pressing CR or CLR will fill the 8bit register with ```0x0D``` or ```0x08``` respectively.  
 - Once the register is full the keypad will set the ```BYTE_RDY``` pin to ```HIGH``` and wait for the register to be read.
 - 3.3V or 5v operation.
@@ -28,7 +28,7 @@
     
   (boundrate can be set using a jumper)  
   (boundrate Clock pin is also available on UART port)  
-  (serial uses no parity, 1 stop bit ```HIGH```, 1 init bit ```LOW```)  
+  (serial uses no parity, 8 data bits, 1 stop bit ```HIGH```, 1 init bit ```LOW```)  
 
 ## Use-cases:
 This keypad can be used to interface with [Ben Eater's](https://eater.net/) 6502 and 8 bit computers,  [Grant Searle's](http://searle.x10host.com/) minimal computers, or to manually program an parallel eeprom. 
