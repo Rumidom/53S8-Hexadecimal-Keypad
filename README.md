@@ -30,15 +30,11 @@
   (boundrate Clock pin is also available on UART port)  
   (serial uses no parity, 8 data bits, 1 stop bit ```HIGH```, 1 init bit ```LOW```)  
 
-## Use-cases:
-This keypad can be used to interface with [Ben Eater's](https://eater.net/) 6502 and 8 bit computers,  [Grant Searle's](http://searle.x10host.com/) minimal computers, or to manually program an parallel eeprom. 
-
 ### This circuit hasn't been tested yet.
 
 ## TODO:
 - [ ] Add a reset button to reset the keypad in parallel/manual mode
 - [ ] Reduce footprint if possible.
-- [ ] Simulate circuit. 
 
 ## License:
 This project is MIT licensed.
