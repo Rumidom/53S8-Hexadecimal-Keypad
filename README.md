@@ -33,8 +33,9 @@
 ### This circuit hasn't been tested yet.
 
 ## TODO:
-- [ ] Add a reset button to reset the keypad in parallel/manual mode
-- [ ] Reduce footprint if possible.
+- [X] Add a reset button to reset the keypad in parallel/manual mode
+- [X] Reduce footprint if possible.
+- [ ] Test.
 
 ## License:
 This project is MIT licensed.
